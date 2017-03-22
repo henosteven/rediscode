@@ -4,6 +4,8 @@
 
 * redisServer
 * redisClient
+* redisDb
+* redisObject
 * 命令实现
 * 定时任务
 * 命令实现
@@ -13,13 +15,21 @@
 
 ## 基础数据结构
 
-* sds
+* [sds](./datastruct/sds.md)
 * [ziplist](./datastruct/ziplist.md)
 * zipmap
 * intset
 * dict
 * skiplist
 * quicklist
+
+## redis命令分析
+
+* list
+* hashtable
+* string
+* set
+* sortset
 
 ## 数据固化
 

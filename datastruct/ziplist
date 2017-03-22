@@ -1,6 +1,6 @@
 ## ziplist的实现
 
-`ziplist的使用很普遍，在实际的场景中用的地方都有：quicklist实现和sortset的实现中，在quicklist的实现中每一个quicknode都是一个ziplist，在sortset中，当数据量比较小的时候，使用功能的就是ziplist，当数据量上升触及上限配置的时候会转为skiplist+dict实现，具体实现参考相应章节`
+> ziplist的使用很普遍，在实际的场景中用的地方都有：quicklist实现和sortset的实现中，在quicklist的实现中每一个quicknode都是一个ziplist，在sortset中，当数据量比较小的时候，使用功能的就是ziplist，当数据量上升触及上限配置的时候会转为skiplist+dict实现，具体实现参考相应章节`
 
 	首先ziplist没有单独的数据结构，整体ziplist的表示方式如下：
 	

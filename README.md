@@ -14,7 +14,7 @@
 ## 基础数据结构
 
 * sds
-* ziplist
+* [ziplist](./datastruct/ziplist)
 * zipmap
 * intset
 * dict

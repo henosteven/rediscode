@@ -18,7 +18,7 @@
 * [sds](./datastruct/sds.md)
 * [ziplist](./datastruct/ziplist.md)
 * zipmap
-* intset
+* [intset](./datastruct/intset.md)
 * dict
 * skiplist
 * quicklist

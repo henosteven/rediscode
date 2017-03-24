@@ -5,7 +5,7 @@
 * redisServer
 * redisClient
 * redisDb
-* redisObject
+* [redisObject](./datastruct/redisobject.md)
 * 命令实现
 * 定时任务
 * 命令实现

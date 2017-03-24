@@ -63,7 +63,7 @@
 * bio
 * latency
 * slowlog
-* blpop
+* [blpop](./otherwork/blpop.md)
 * [multi | exec](./otherwork/multi.md)
 
 ## redis的一些命令技巧

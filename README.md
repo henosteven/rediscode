@@ -64,6 +64,7 @@
 * latency
 * slowlog
 * blpop
+* [multi | exec](./otherwork/multi.md)
 
 ## redis的一些命令技巧
 

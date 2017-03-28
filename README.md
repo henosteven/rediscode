@@ -68,4 +68,4 @@
 
 ## redis的一些命令技巧
 
-* rpoplpush
+* [rpoplpush](./skills/rpoplpush.md)

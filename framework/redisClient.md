@@ -77,6 +77,10 @@
     #define CLIENT_MONITOR (1<<2) /* This client is a slave monitor, see MONITOR */
     #define CLIENT_MULTI (1<<3)   /* This client is in a MULTI context */
     #define CLIENT_BLOCKED (1<<4) /* The client is waiting in a blocking operation */
+
+    /*
+     * 当当前client watch的key发生变化的时候
+     */
     #define CLIENT_DIRTY_CAS (1<<5) /* Watched keys modified. EXEC will fail. */
     #define CLIENT_CLOSE_AFTER_REPLY (1<<6) /* Close after writing entire reply. */
     #define CLIENT_UNBLOCKED (1<<7) /* This client was unblocked and is stored in
@@ -85,6 +89,10 @@
     #define CLIENT_ASKING (1<<9)     /* Client issued the ASKING command */
     #define CLIENT_CLOSE_ASAP (1<<10)/* Close this client ASAP */
     #define CLIENT_UNIX_SOCKET (1<<11) /* Client connected via Unix domain socket */
+
+    /* 当命令参数不对，命令不存在，命令会对内存影响而当前内存不足等情况下
+     * 在事物执行exec的会有影响
+     */
     #define CLIENT_DIRTY_EXEC (1<<12)  /* EXEC will fail for errors while queueing */
     #define CLIENT_MASTER_FORCE_REPLY (1<<13)  /* Queue replies even if is master */
     #define CLIENT_FORCE_AOF (1<<14)   /* Force AOF propagation of current cmd. */

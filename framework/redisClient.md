@@ -29,6 +29,8 @@
         time_t ctime;           /* Client creation time. */
         time_t lastinteraction; /* Time of the last interaction, used for timeout */
         time_t obuf_soft_limit_reached_time;
+
+        /* 记录了客户端当前的状态（状态集合） */
         int flags;              /* Client flags: CLIENT_* macros. */
         int authenticated;      /* When requirepass is non-NULL. */
         int replstate;          /* Replication state if this is a slave. */

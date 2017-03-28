@@ -57,7 +57,7 @@
 
 ## redis的一些额外封装
 
-* pub|sub
+* [pub|sub](./otherwork/pubsub.md)
 * watch | multi exec
 * rio
 * bio

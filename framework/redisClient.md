@@ -70,6 +70,7 @@
     } client;
 
 客户端有很多标记
+
     /* Client flags */
     #define CLIENT_SLAVE (1<<0)   /* This client is a slave server */
     #define CLIENT_MASTER (1<<1)  /* This client is a master server */

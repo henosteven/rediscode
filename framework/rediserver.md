@@ -273,9 +273,15 @@
                                  execution. */
         int lua_kill;         /* Kill the script if true. */
         int lua_always_replicate_commands; /* Default replication type. */
+
+
         /* Latency monitor */
+        /* 默认为 CONFIG_DEFAULT_LATENCY_MONITOR_THRESHOLD 0 ，延迟取样的阈值 */
         long long latency_monitor_threshold;
+        
+        /* 记录延迟事件，事件 =》 延迟记录list */
         dict *latency_events;
+
         /* Assert & bug reporting */
         char *assert_failed;
         char *assert_file;

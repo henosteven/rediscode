@@ -47,8 +47,8 @@
 
 ## sentinel实现
 
-* 配置及使用
-* 实现原理
+* [配置及使用](./sentinel/sentineluse.md)
+* [实现原理](./sentinel/sentinel.md)
 
 ## cluster实现
 

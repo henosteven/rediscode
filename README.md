@@ -61,7 +61,7 @@
 * rio
 * bio
 * [latency](./otherwork/latency.md)
-* slowlog
+* [slowlog](./otherwork/slowlog.md)
 * [blpop](./otherwork/blpop.md)
 * [multi | exec](./otherwork/multi.md)
 

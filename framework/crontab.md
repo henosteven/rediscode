@@ -25,20 +25,20 @@
     }
 
 > 所以我们可以看出，时间事件的调用在主循环中，但是频率是如何控制的呢？
-  
-  答案就是我们的 server.hz（赫兹）
-  #define run_with_period(_ms_) if ((_ms_ <= 1000/server.hz) || !(server.cronloops%((_ms_)/(1000/server.hz))))
-  在serverCron中经常能看见这样的代码
-  run_with_period(5000) {
+   
+    答案就是我们的 server.hz（赫兹）
+    #define run_with_period(_ms_) if ((_ms_ <= 1000/server.hz) || !(server.cronloops%((_ms_)/(1000/server.hz))))
+    在serverCron中经常能看见这样的代码
+    run_with_period(5000) {
       serverLog(LL_VERBOSE,
               "%lu clients connected (%lu slaves), %zu bytes in use",
               listLength(server.clients)-listLength(server.slaves),
               listLength(server.slaves),
               zmalloc_used_memory());
-  }
-  通过上面的宏我们可以看见
-  如果5000<=1000/server.hz表示事件要求的频率比我们server.hz要大，立刻执行
-  否者需要累加到一个周期之后再进行
+    }
+    通过上面的宏我们可以看见
+    如果5000<=1000/server.hz表示事件要求的频率比我们server.hz要大，立刻执行
+    否者需要累加到一个周期之后再进行
 
 > serverCron中包含的一些重要操作
 

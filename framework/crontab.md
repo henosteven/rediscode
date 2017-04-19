@@ -3,6 +3,7 @@
 ` 时间事件是redis中非常重要的角色，在redis的代码中我们会看见
   aeCreateTimeEvent(server.el, 1, serverCron, NULL, NULL)
   serverCron的主要任务就是执行各类周期性任务
+`
 
 > 我们来看一段调用代码
 
